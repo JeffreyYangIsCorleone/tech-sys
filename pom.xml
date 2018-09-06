@@ -23,8 +23,6 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
-        <!--spring依赖版本控制（和spring-boot-parent版本保持一致）-->
-        <springframework.version>4.3.13.RELEASE</springframework.version>
     </properties>
 
 </project>
