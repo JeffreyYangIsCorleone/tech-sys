@@ -9,9 +9,14 @@
         <module name="techsys-common" />
         <module name="techsys-dao" />
         <module name="techsys-entity" />
+        <module name="techsys-securitybrow" />
+        <module name="techsys-securitycore" />
         <module name="techsys-service" />
         <module name="techsys-sysweb" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="techsys-parent" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

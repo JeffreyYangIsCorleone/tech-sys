@@ -4,7 +4,7 @@ package com.jeffrey.entity.sysUser;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
-@Table(name="sys_user")
+@Table(name = "sys_user")
 @Entity
 public class sysUser {
 

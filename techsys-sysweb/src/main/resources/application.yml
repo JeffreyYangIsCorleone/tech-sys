@@ -2,11 +2,12 @@ spring:
   thymeleaf:
     prefix: classpath:/templates/
     suffix: .html
-    mode: HTML5
+    mode: LEGACYHTML5
     encoding: UTF-8
     servlet:
       content-type: text/html
     cache: false
+    content-type: text/html
   resources:
     chain:
       strategy:
@@ -28,6 +29,15 @@ spring:
       naming:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
 
+  session:
+    store-type: none
+
+security:
+  basic:
+    enabled: false
+
+
+
 server:
-  port: 8082
+  port: 8080
 

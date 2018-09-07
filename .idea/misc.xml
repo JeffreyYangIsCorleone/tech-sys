@@ -5,11 +5,12 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/techsys-entity/pom.xml" />
         <option value="$PROJECT_DIR$/techsys-sysweb/pom.xml" />
         <option value="$PROJECT_DIR$/techsys-service/pom.xml" />
+        <option value="$PROJECT_DIR$/techsys-entity/pom.xml" />
         <option value="$PROJECT_DIR$/techsys-dao/pom.xml" />
-        <option value="$PROJECT_DIR$/techsys-common/pom.xml" />
+        <option value="$PROJECT_DIR$/techsys-securitycore/pom.xml" />
+        <option value="$PROJECT_DIR$/techsys-securitybrow/pom.xml" />
       </list>
     </option>
   </component>

@@ -4,12 +4,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.jeffrey.tech</groupId>
-    <artifactId>techsys-entity</artifactId>
+    <artifactId>techsys-securitybrow</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>tech::后台系统实体类</name>
-    <description>Demo project for Spring Boot</description>
+    <name>tech::security浏览器访问</name>
 
     <parent>
         <groupId>com.jeffrey.tech</groupId>
@@ -22,5 +21,20 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.jeffrey.securitycore</groupId>
+            <artifactId>techsys-securitycore</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
+        <!-- 浏览器端Session管理的重要依赖 -->
+        <dependency>
+            <groupId>org.springframework.session</groupId>
+            <artifactId>spring-session</artifactId>
+        </dependency>
+
+    </dependencies>
 
 </project>

@@ -3,8 +3,11 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/techsys-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/techsys-common" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/techsys-dao" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/techsys-entity" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/techsys-securitybrow" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/techsys-securitycore" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/techsys-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/techsys-sysweb" charset="UTF-8" />
   </component>

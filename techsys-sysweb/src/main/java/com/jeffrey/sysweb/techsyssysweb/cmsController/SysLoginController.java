@@ -14,9 +14,9 @@ public class SysLoginController {
     private Logger logger = LoggerFactory.getLogger(SysLoginController.class);
 
     @RequestMapping("check_login")
-    public Map<String, Object> checkSysLogin(String account,String password
-            ,String code){
-        logger.info("account,password,code,{},{},{}",account,password,code);
+    public Map<String, Object> checkSysLogin(String account, String password
+            , String code) {
+        logger.info("account,password,code,{},{},{}", account, password, code);
         return null;
     }
 }

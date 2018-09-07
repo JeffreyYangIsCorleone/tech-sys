@@ -9,14 +9,14 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class SysMenuController {
 
     @RequestMapping("g_login")
-    public String goToLoginPage(){
+    public String goToLoginPage() {
         System.out.println("...");
         return "login";
     }
 
     @RequestMapping("test")
     @ResponseBody
-    public String test(){
+    public String test() {
         return "login";
     }
 }

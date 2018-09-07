@@ -3,17 +3,17 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.jeffrey.dao</groupId>
+    <groupId>com.jeffrey.tech</groupId>
     <artifactId>techsys-dao</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>tech::后台系统持久层</name>
 
     <parent>
-        <groupId>com.jeffrey.parent</groupId>
+        <groupId>com.jeffrey.tech</groupId>
         <artifactId>techsys-parent</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <version>1.0.0-SNAPSHOT</version>
     </parent>
 
     <properties>
@@ -24,9 +24,9 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.jeffrey.entity</groupId>
+            <groupId>com.jeffrey.tech</groupId>
             <artifactId>techsys-entity</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <version>1.0.0-SNAPSHOT</version>
         </dependency>
 
     </dependencies>

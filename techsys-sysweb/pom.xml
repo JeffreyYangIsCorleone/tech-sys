@@ -3,17 +3,17 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.jeffrey.sysweb</groupId>
+    <groupId>com.jeffrey.tech</groupId>
     <artifactId>techsys-sysweb</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>tech::后台系统控制层</name>
 
     <parent>
-        <groupId>com.jeffrey.parent</groupId>
+        <groupId>com.jeffrey.tech</groupId>
         <artifactId>techsys-parent</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <version>1.0.0-SNAPSHOT</version>
     </parent>
 
     <properties>
@@ -23,28 +23,41 @@
     </properties>
 
     <dependencies>
+
         <dependency>
-            <groupId>com.jeffrey.common</groupId>
+            <groupId>com.jeffrey.tech</groupId>
+            <artifactId>techsys-securitybrow</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
+
+        <!--<dependency>
+            <groupId>com.jeffrey.tech</groupId>
             <artifactId>techsys-common</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>-->
 
         <dependency>
-            <groupId>com.jeffrey.entity</groupId>
+            <groupId>com.jeffrey.tech</groupId>
             <artifactId>techsys-entity</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <version>1.0.0-SNAPSHOT</version>
         </dependency>
 
         <dependency>
-            <groupId>com.jeffrey.dao</groupId>
+            <groupId>com.jeffrey.tech</groupId>
             <artifactId>techsys-dao</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <version>1.0.0-SNAPSHOT</version>
         </dependency>
 
         <dependency>
-            <groupId>com.jeffrey.service</groupId>
+            <groupId>com.jeffrey.tech</groupId>
             <artifactId>techsys-service</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
+        <!-- thymeleaf非严格模式 需要引入该jar包-->
+        <dependency>
+            <groupId>net.sourceforge.nekohtml</groupId>
+            <artifactId>nekohtml</artifactId>
+            <version>1.9.22</version>
         </dependency>
 
         <dependency>
@@ -81,10 +94,10 @@
         </dependency>
 
         <!-- spring-data-jpa -->
-        <dependency>
+        <!--<dependency>
             <groupId>org.springframework.data</groupId>
             <artifactId>spring-data-jpa</artifactId>
-        </dependency>
+        </dependency>-->
 
         <dependency>
             <groupId>mysql</groupId>
@@ -98,6 +111,13 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
