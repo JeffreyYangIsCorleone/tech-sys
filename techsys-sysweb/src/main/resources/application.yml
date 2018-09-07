@@ -14,6 +14,20 @@ spring:
           paths: /**
       enabled: true
 
+  datasource:
+    username: root
+    password: yjf948512
+    url: jdbc:mysql://47.107.36.143:3306/tech
+    driver-class-name: com.mysql.jdbc.Driver
+  freemarker:
+    cache: false
+  jpa:
+    database: mysql
+    show-sql: true
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+
 server:
   port: 8082
 
