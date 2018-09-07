@@ -31,7 +31,7 @@
                 <div class="layui-form layui-tab-content">
                     <div class="layui-tab-item layui-show">
                         <div class="layui-form layui-form-pane">
-                            <form class="login-form" method="post">
+                            <form onsubmit="return false" class="layui-form" method="post">
                                 <div class="layui-form-item">
                                     <label class="layui-form-label">手机/邮箱</label>
                                     <div class="layui-input-inline">
@@ -54,7 +54,7 @@
                                     </div>
                                 </div>
                                 <div class="layui-form-item">
-                                    <button class="layui-btn">立即登录</button>
+                                    <button class="layui-btn" lay-submit lay-filter="loginForm">立即登录</button>
                                     <span style="padding-left: 20px;">
                                         <a>忘记密码？</a>
                                     </span>
@@ -71,5 +71,27 @@
 <style>
 
 </style>
-
 </html>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script>
+    layui.use('form', function() {
+        var form = layui.form;
+        //监听提交
+        form.on('submit(loginForm)', function(data) {
+            console.log("...");
+            $.ajax({
+                url:'/sys/check_login',
+                method:'post',
+                data:JSON.stringify(data.field),
+                type:'json',
+                success:function (res) {
+
+                }
+            });
+            return false;
+            //layer.msg(JSON.stringify(data.field));
+            //return false;
+        });
+    });
+
+</script>
